@@ -1,0 +1,8 @@
+1. Modify the fastplaidapi.py file to include a get end point for transactions
+2. Implement a fetch_transactions function in the endpoint which should accept the Plaid access token (string), a start date (datetime.date) and a end date (datetime.date) as parameters.
+3. Modify the crud.py file in the services folder to include a get_transactions function which accepts plaid_client, access_token, start_date, end_date
+4. Import TransactionsGetRequest and TransactionsGetRequestOptions from plaid-python REST api wrapper 
+5. Create a variable called transactions_request inside the get_transactions function which stores the parameters passed into the function: {access_token=access_token, start_date=start_date, end_date=end_date, options=options}
+6. Create a variable called transactions_response which will make the rest api call using the transactions_request and the plaid_client paramater 
+7. Create a variable called transactions which will extract the transactions from the transactions_response
+8. Return the transactions 

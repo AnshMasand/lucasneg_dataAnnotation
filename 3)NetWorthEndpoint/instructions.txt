@@ -1,0 +1,10 @@
+1. Modify the fastplaidapi.py file to include a get endpoint for net worth.
+2. Implement a get_net_worth function in the endpoint which should accept the Plaid access token (string) as a parameter.
+3. Modify the crud.py file in the services folder to include a get_accounts function which accepts plaid_client and access_token.
+4. Import AccountsGetRequest from plaid-python REST api wrapper.
+5. Create a variable called accounts_request inside the get_accounts function which stores the parameters passed into the function: {access_token=access_token}.
+6. Create a variable called accounts_response which will make the rest api call using the accounts_request and the plaid_client parameter.
+7. Create a variable called accounts which will extract the accounts from the accounts_response.
+8. Convert each account to dictionary using to_dict() method and store them in a list.
+9. Create a variable net_worth that calculates the sum of all available balances from each account.
+10. Return a dictionary where "net_worth" is the key and the calculated net worth is the value. 

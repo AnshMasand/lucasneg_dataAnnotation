@@ -1,0 +1,8 @@
+1. Firstly, modify the fastplaidapi.py file to include a new get endpoint for cash_flow that requires a year, month and access token.
+2. In this endpoint (get_monthly_cash_flow), instantiate the start_date with year and month parameters and set date to the first day of the month.
+3. The end_date can be derived by adding 32 days to the start_date, then setting the date to the first day of next month, and finally subtracting 1 day to get the last day of the current month.
+4. Fetch transactions using the crud.get_transactions method with parameters of plaid_client, access_token, start_date and end_date.
+5. Then, calculate the income by summing up the amounts of transactions whose transaction_type equals 'credit'.
+6. Calculate expenses by summing up the amounts of transactions whose transaction_type equals 'debit'.
+7. Finally, subtract the expenses from the income to get the overall cash_flow for the month.
+8. Return the cash_flow and the specific period as a dictionary.

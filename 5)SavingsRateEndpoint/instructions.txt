@@ -1,0 +1,8 @@
+1. Modify the fastplaidapi.py file to include a get endpoint for the savings rate.
+2. Implement a get_savings_rate function in the endpoint which should accept the year (int), month (int), access_token (string) and income (float) as parameters.
+3. In the get_savings_rate function, create start_date and end_date parameters using the provided year and month.
+4. Call the get_transactions function from crud.py passing plaid_client, access_token, start_date, and end_date to obtain all transactions during the specified period.
+5. Aggregate the expenses by summing up the amount for each transaction with a transaction_type of 'debit'.
+6. If income is equal to 0, return an error.
+7. Otherwise, calculate the savings rate as (income - expenses) / income.
+8. Return the savings rate rounded to two decimal points.

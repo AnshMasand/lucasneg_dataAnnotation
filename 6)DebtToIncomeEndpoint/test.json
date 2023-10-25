@@ -1,0 +1,8 @@
+[
+    {
+    "repo_url": "https://github.com/AnshMasand/plaid_fastapi_gptdata",
+    "objective": "Implement an endpoint to calculate users DebtToIncome Ratio", 
+    "parent_commit": "dd1a3e5",
+    "test_script": "test_scripts/debtToIncome_utest.py"
+    } 
+]

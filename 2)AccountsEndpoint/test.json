@@ -1,0 +1,9 @@
+[
+    {
+    "repo_url": "https://github.com/AnshMasand/plaid_fastapi_gptdata",
+    "objective": "Implement an endpoint to retrieve users accounts balances from Plaid.", 
+    "parent_commit": "07caaaa",
+    "test_script": "test_scripts/accountsBal_utest.py"
+    } 
+]
+

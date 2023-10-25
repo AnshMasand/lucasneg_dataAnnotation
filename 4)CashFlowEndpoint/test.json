@@ -1,0 +1,9 @@
+[
+    {
+    "repo_url": "https://github.com/AnshMasand/plaid_fastapi_gptdata",
+    "objective": "Implement a endpoint to calculate a users cashflow", 
+    "parent_commit": "64fed14",
+    "test_script": "test_scripts/cashFlow_utest.py"
+    } 
+]
+

@@ -1,0 +1,9 @@
+[
+    {
+    "repo_url": "https://github.com/AnshMasand/plaid_fastapi_gptdata",
+    "objective": "Implement an endpoint to retrieve user transactions from Plaid", 
+    "parent_commit": "655cf6f",
+    "test_script": "test_scripts/transactions_utest.py"
+    } 
+]
+

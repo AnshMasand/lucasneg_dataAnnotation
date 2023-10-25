@@ -1,0 +1,9 @@
+[
+    {
+    "repo_url": "https://github.com/AnshMasand/plaid_fastapi_gptdata",
+    "objective": "Implement a endpoint to calculate a user's networth", 
+    "parent_commit": "33822df",
+    "test_script": "test_scripts/netWorth_utest.py"
+    } 
+]
+

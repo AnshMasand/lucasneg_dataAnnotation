@@ -1,0 +1,9 @@
+[
+    {
+    "repo_url": "https://github.com/AnshMasand/plaid_fastapi_gptdata",    
+    "objective": "Implement a delete function for todo list items.", 
+    "parent_commit": "ec5c942",
+    "test_script": "test_scripts/savingsRate_utest.py"
+    } 
+]
+

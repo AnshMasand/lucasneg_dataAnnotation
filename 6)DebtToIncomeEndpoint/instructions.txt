@@ -1,0 +1,8 @@
+1. Modify the fastplaidapi.py file to include a new get endpoint for the debt-to-income ratio calculation called '/plaid/debt_to_income'.
+2. Implement a get_debt_to_income function in the endpoint which accepts the Plaid access token (string) and monthly income (float) as parameters.
+3. Modify the crud.py file in the services folder to include the get_accounts function which you have already implemented previously, as it is used in this function.
+4. Within get_debt_to_income, first get all account data by calling get_accounts with plaid_client and access_token parameters.
+5. Calculate the total debt by summing up the current balance of each account in the accounts list, but only if the account type is either 'checking' or 'savings'.
+6. Check if the provided monthly_income is zero. If so, return an error message saying "Income cannot be zero".
+7. Calculate the debt-to-income ratio by dividing the total debt by the monthly income. 
+8. Return the debt-to-income ratio rounded to two decimal places in a dictionary format: `{"debt_to_income_ratio": round(debt_to_income_ratio*100, 2)}`.
